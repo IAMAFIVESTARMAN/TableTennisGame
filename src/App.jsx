@@ -68,12 +68,11 @@ function App() {
   function modalHandler() {
     setModal((prev) => !prev);
   }
-  const sectionClasses = !gameStatus
-    ? "bg-emerald-500 max-h-full "
-    : "max-h-full";
 
   return (
-    <section className={sectionClasses}>
+    <section
+      className={`${!gameStatus ? "bg-emerald-500" : ""} max-h-full p-10`}
+    >
       {gameStatus && (
         <div className="flex justify-between ">
           <div

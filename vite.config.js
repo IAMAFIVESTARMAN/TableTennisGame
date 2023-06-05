@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
   console.log(env.VITE_PORT_NUM);
   return {
     plugins: [react()],
-    base: "/vite-test/",
+
     server: { port: env.VITE_PORT_NUM, open: "index.html" },
     preview: {
       port: 3000,
